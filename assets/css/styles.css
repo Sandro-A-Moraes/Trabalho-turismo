@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 996px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/a406/0224/10dc48339d815696358fa0dc17f36462?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dPk8H0R0eDoZNvjnO8YV8JCGs8yKqvAFLRfMzkLdophkAuZXoKJD2phATleasW-CWvPsyDXZw5At0wXsneQ8aYQUx3P32MZiRFG1y5WM-IqKy2N6jMbWbTawUtnJpajRhyd1AMgg4e4weyAwWdpmuhlw4z-utYbgFcjo-J6R9eNrVxNYAF4OksNq1Ommq2aIIZMsnU-CSKX-W8EQRFZdCwVsSV-1M7nveZ6qPDmmnbVsYCmzrOyaiHWGI8Se-zBj7MmbbpwxeCo-szYjWJYoe2dXAhvZko918RUW~Y~1M8rbpVJb3CFFsQf0AqWJ1R19biLEFryUasZpE-kLdkqR7g__');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    color: #E5DCFF;
+}
