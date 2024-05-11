@@ -1,54 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-@font-face{
-    font-family: "Bebas Regular";
-    src: url(../fonts/BebasNeue\ Regular.otf);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D3D3D3;
 }
 
-@font-face {
-    font-family: "Abril Regular";
-    src: url(../fonts/AbrilFatface-Regular.ttf);
+
+html {
+    background-color: #0E0E0E;
 }
 
-/* Configurações globais */
 
-body{
-    background-color: black;
-    color: white;
-}
-
-/* Configurações capa */
-
-header{
-    height: 950px;
+section {
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.077), rgba(0,0,0,1)), url(../images/capa-lago.jpg);
+    min-height: 95vh;
+}
+
+
+
+
+/*//// HEADER ////*/
+header {
+    width: 100%; height: 95vh;
+    background-image: linear-gradient(transparent, #0E0E0E), url(../images/capa-lago.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     z-index: 0;
-    filter: brightness(83%);
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-    
+    overflow: hidden;
 }
 
-.container-titulo{
+header .container-titulo {
     position: absolute;
     top: 10%;
     height: 500px;
@@ -57,11 +53,9 @@ header{
     display: flex;
     align-items: center;
     text-align: center;
- 
 }
 
-.container-titulo .titulo-capa{
-    font-family: "Bebas Regular", sans-serif;
+header .container-titulo h1.titulo-capa {
     font-size: 118px;
     text-align: center;
     margin: auto;
@@ -69,36 +63,41 @@ header{
     
 }
 
-.container-titulo .palavra1{
+header .container-titulo h1.titulo-capa .palavra1 {
+    font-family: "Bebas Neue", sans-serif;
     position: absolute;
     top: 20%;
     left: 6%;
-
     z-index: 1;
+    color: #FFFFFF;
 }
 
-.container-titulo #e-comercial{
+header .container-titulo h1.titulo-capa #e-comercial {
     font-family: "Abril Regular", serif;
     font-weight: 400;
     font-style: normal;
+
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+
     color: #477ad0;
     position: absolute;
     top: 30%;
     left: 47%;
-    
-    
     z-index: 2;
-    
 }
 
-.container-titulo .palavra2{
+header .container-titulo h1.titulo-capa .palavra2 {
+    font-family: "Bebas Neue", sans-serif;
     position: absolute;
     top: 52%;
     right: 8%;
-    z-index: 2;
+    z-index: 1;
+    color: #FFFFFF;
 }
 
-.arara-maior{
+header .arara-maior{
     position: absolute;
     top: 5%;
     left: 9%;
@@ -106,7 +105,7 @@ header{
     width: 320px;
 }
 
-.arara-menor{
+header .arara-menor{
     position: absolute;
     top: 46%;
     right: 17.5%;
@@ -114,6 +113,9 @@ header{
     width: 174px;
     
 }
+
+
+
 
 a{
     font-family: "Bebas Regular", sans-serif;
@@ -219,9 +221,3 @@ a{
 .changed{
     display: block;
 }
-
-main{
-    
-}
-
-

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+section.mais__visitados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.mais__visitados a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; 
+} 
+
+section.mais__visitados .container {
+    display: flex;
+    gap: 15px;
+}
+
+section.mais__visitados .container input {
+    display: none;
+}
+
+section.mais__visitados .container label .text_and_img {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    width: 150px; height: 250px;
+    transition: .6s;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    overflow: hidden;
+}
+
+section.mais__visitados .container label .text_and_img h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 150px;
+    line-height: 130px;
+    margin: -10px;
+    color: #FFFFFF;
+    text-shadow: -5px 0px 20px #0e0e0e75;
+}
+
+section.mais__visitados .container label[for="card_1"] .text_and_img {
+    box-shadow: 0 0 30px 0 #02989d31;
+}
+
+section.mais__visitados .container label[for="card_2"] .text_and_img {
+    box-shadow: 0 0 30px 0 #d0344931;
+}
+
+section.mais__visitados .container label[for="card_3"] .text_and_img {
+    box-shadow: 0 0 30px 0 #08999431;
+}
+
+section.mais__visitados .container label[for="card_4"] .text_and_img {
+    box-shadow: 0 0 30px 0 #474d0031;
+}
+
+section.mais__visitados .container input:checked + label .text_and_img {
+    width: 400px;
+}
+
+section.mais__visitados .container p {
+    opacity: 0;
+    transition: .3s;
+    text-align: end;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+section.mais__visitados .container input:checked + label p {
+    opacity: 1;
+}
+
+section.mais__visitados .container label .text_and_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.mais__visitados .container label[for="card_1"] .text_and_img {
+    background: url("../images/mais_visitados/01.jpg") center;
+}
+
+section.mais__visitados .container label[for="card_2"] .text_and_img {
+    background: url("../images/mais_visitados/02.jpg") center;
+}
+
+section.mais__visitados .container label[for="card_3"] .text_and_img {
+    background: url("../images/mais_visitados/03.jpg") center;
+}
+
+section.mais__visitados .container label[for="card_4"] .text_and_img {
+    background: url("../images/mais_visitados/04.jpg") center;
+}
