@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recanto das marias</title>
+
+    <link rel="stylesheet" href="assets/css/ponto_turistico.css">
+</head>
+<body>
+    <section class="apresentacao">
+        <h1>Recanto das marias</h1>
+        <div class="bg_img"></div>
+        <!-- <img src="images/img01.jpg" alt="imagem ponto turistico"> -->
+    </section>
+
+    <section class="apresentacao__descricao">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos possimus cupiditate magni perferendis repellat expedita.
+            Est laudantium at quidem reiciendis, aspernatur, doloremque magni
+            obcaecati delectus voluptas error voluptatum culpa natus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos possimus cupiditate magni perferendis repellat expedita.
+            Est laudantium at quidem reiciendis, aspernatur, doloremque magni
+            obcaecati delectus voluptas error voluptatum culpa natus?
+            <br> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos possimus cupiditate magni perferendis repellat expedita.
+            Est laudantium at quidem reiciendis, aspernatur, doloremque magni
+            obcaecati delectus voluptas error voluptatum culpa natus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos possimus cupiditate magni perferendis repellat expedita.
+            Est laudantium at quidem reiciendis, aspernatur, doloremque magni
+            obcaecati delectus voluptas error voluptatum culpa natus?
+        </p>
+        <img src="assets/images/img01.jpg" alt="imagem ponto turistico">
+    </section>
+    
+    <section class="apresentacao__imagens">
+        <div class="titulo">
+            <h2>Imagens</h2>
+            <p class="titulo__fundo">Imagens</p>
+        </div>
+
+        <div class="carrossel">
+            <div class="linha__imagens">
+                <img src="assets/images/img02.jpeg" alt="imagem carro">
+                <img src="assets/images/img03.jpeg" alt="imagem carro">
+                <img src="assets/images/img04.jpg" alt="logo uepa">
+            </div>
+
+            <div class="seletor">
+                <div class="seta esquerda">esquerda</div>
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <div class="seta direita">direita</div>
+            </div>
+        </div>
+
+        <img class="imagem__canto" src="assets/images/mulher_canto.png" alt="imagem fotografa canto">
+    </section>
+
+    <section class="apresentacao__local"></section>
+
+    <section class="teste">
+        <div class="container">
+            <a href="/">
+                <div class="item">
+                    <input type="radio" name="slide" id="card_1" checked>
+                    <label for="card_1">
+                        <div class="text_and_img">
+                            <h2>01</h2>
+                        </div>
+                    </label>
+                    <p>Ponto Turistico 01</p>
+                </div>
+            </a>
+
+            <div class="item">
+                <a href="/">
+                    <input type="radio" name="slide" id="card_2">
+                    <label for="card_2">
+                        <div class="text_and_img">
+                            <h2>02</h2>
+                        </div>
+                    </label>
+                </a>
+                <p>Ponto Turistico 02</p>
+            </div>
+
+            <div class="item">
+                <a href="/">
+                    <input type="radio" name="slide" id="card_3">
+                    <label for="card_3">
+                        <div class="text_and_img">
+                            <h2>03</h2>
+                        </div>
+                    </label>
+                </a>
+                <p>Ponto Turistico 03</p>
+            </div>
+
+            <div class="item">
+                <a href="/">
+                    <input type="radio" name="slide" id="card_4">
+                    <label for="card_4">
+                        <div class="text_and_img">
+                            <h2>04</h2>
+                        </div>
+                    </label>
+                </a>
+                <p>Ponto Turistico 04</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="fundo__amarelo">
+        <div class="fundo__cinza">
+            <img src="" alt="">
+            <h2 class="titulo">Caminhos & trilhas</h2>
+
+            <div class="menu__navegar__pagina">
+                <ul> <!-- Unordered List - ul -->
+                    <li class="titulo__menu"> <!-- List Item - li -->
+                        Menu
+                    </li>
+                    <li><a href="">Apresentação</a></li>
+                    <li><a href="">Descrição</a></li>
+                    <li><a href="">Imagens</a></li>
+                    <li><a href="">Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="menu__contatos">
+                <ul>
+                    <li class="titulo__menu">Contatos</li>
+                    <li>
+                        <div class="icone">\\icone aqui\\</div>
+                        <p>(94) 9 9876-4321</p>
+                    </li>
+                    <li>
+                        <div class="icone">\\icone aqui\\</div>
+                        <p>contato@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu__redes_sociais">
+                <p class="titulo__menu">Redes sociais</p>
+                <div class="linha__icones__redes_sociais">
+                    <!-- colocar icones redes sociais -->
+                </div>
+            </div>
+        </div>
+        <img src="images/pessoas_footer.png" alt="pessoas que ficam no footer">
+    </footer>
+
+
+    <script>
+        let sectionTeste = document.querySelector("section.teste");
+        sectionTeste.querySelectorAll(".container .item").forEach(item => {
+            let label = item.querySelector("label");
+            let input = item.querySelector("input");
+
+            label.addEventListener("mouseover", () => {
+                input.checked = true;
+            })
+        })
+    </script>
+</body>
+</html>
