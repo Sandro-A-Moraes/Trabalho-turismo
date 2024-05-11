@@ -15,8 +15,4 @@ let sectionTeste = document.querySelector("section.mais__visitados");
             label.addEventListener("mouseover", () => {
                 input.checked = true;
             })
-<<<<<<< HEAD
         })
-=======
-        })
->>>>>>> 622f0b8bc78fc8adaee4b529487c0fc1549f3291

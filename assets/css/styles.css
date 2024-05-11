@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+@font-face {
+    font-family: "Abril fatface", serif;
+    src: url("../fonts/AbrilFatface-Regular.ttf");
+}
+
 
 * {
     margin: 0;
@@ -18,23 +23,11 @@ html {
     background-color: #0E0E0E;
 }
 
-
-<<<<<<< HEAD
-body{
-    background-color: black;
-    color: white;
-    
-=======
 section {
     width: 100%;
     min-height: 95vh;
->>>>>>> 622f0b8bc78fc8adaee4b529487c0fc1549f3291
 }
 
-
-
-
-/*//// HEADER ////*/
 header{
     height: 950px;
     width: 100%;
@@ -69,30 +62,30 @@ header{
 }
 
 .container-titulo .titulo-capa{
-    font-family: "Bebas Regular", sans-serif;
+    font-family: "Bebas regular", sans-serif;
     font-size: 118px;
     text-align: center;
     margin: auto;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     
 }
 
 .container-titulo .palavra1{
     position: absolute;
-    top: 20%;
-    left: 6%;
+    top: 9%;
+    left: -16%;
 
     z-index: 1;
 }
 
 .container-titulo #e-comercial{
-    font-family: "Abril Regular", serif;
+    font-family: "Abril fatface", serif;
     font-weight: 400;
     font-style: normal;
     color: #477ad0;
     position: absolute;
-    top: 30%;
-    left: 47%;
+    top: 25%;
+    left: 50%;
     
     
     z-index: 2;
@@ -101,23 +94,24 @@ header{
 
 .container-titulo .palavra2{
     position: absolute;
-    top: 52%;
-    right: 8%;
+    top: 45%;
+    right: -3%;
     z-index: 2;
 }
 
 .arara-maior{
     position: absolute;
-    top: 5%;
-    left: 9%;
+    top: 6.7%;
+    left: 1%;
+    transform: rotate(10deg);
     z-index: 4;
-    width: 320px;
+    width: 220px;
 }
 
 .arara-menor{
     position: absolute;
-    top: 46%;
-    right: 17.5%;
+    top: 45%;
+    right: 10.5%;
     z-index: 4;
     width: 174px;
     
@@ -238,8 +232,4 @@ a{
 
 .mais__visitados{
     z-index: -99;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 622f0b8bc78fc8adaee4b529487c0fc1549f3291
