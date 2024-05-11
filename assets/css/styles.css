@@ -3,13 +3,225 @@
     padding: 0;
 }
 
-header{
-    height: 996px;
-    background-image: url('https://s3-alpha-sig.figma.com/img/a406/0224/10dc48339d815696358fa0dc17f36462?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dPk8H0R0eDoZNvjnO8YV8JCGs8yKqvAFLRfMzkLdophkAuZXoKJD2phATleasW-CWvPsyDXZw5At0wXsneQ8aYQUx3P32MZiRFG1y5WM-IqKy2N6jMbWbTawUtnJpajRhyd1AMgg4e4weyAwWdpmuhlw4z-utYbgFcjo-J6R9eNrVxNYAF4OksNq1Ommq2aIIZMsnU-CSKX-W8EQRFZdCwVsSV-1M7nveZ6qPDmmnbVsYCmzrOyaiHWGI8Se-zBj7MmbbpwxeCo-szYjWJYoe2dXAhvZko918RUW~Y~1M8rbpVJb3CFFsQf0AqWJ1R19biLEFryUasZpE-kLdkqR7g__');
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@font-face{
+    font-family: "Bebas Regular";
+    src: url(../fonts/BebasNeue\ Regular.otf);
 }
 
-header h1{
-    color: #E5DCFF;
+@font-face {
+    font-family: "Abril Regular";
+    src: url(../fonts/AbrilFatface-Regular.ttf);
 }
+
+/* Configurações globais */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* Configurações capa */
+
+header{
+    height: 950px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.077), rgba(0,0,0,1)), url(../images/capa-lago.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    filter: brightness(83%);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    
+}
+
+.container-titulo{
+    position: absolute;
+    top: 10%;
+    height: 500px;
+    width: 65vw;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.container-titulo .titulo-capa{
+    font-family: "Bebas Regular", sans-serif;
+    font-size: 118px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 3px;
+    
+}
+
+.container-titulo .palavra1{
+    position: absolute;
+    top: 20%;
+    left: 6%;
+
+    z-index: 1;
+}
+
+.container-titulo #e-comercial{
+    font-family: "Abril Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #477ad0;
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    
+    
+    z-index: 2;
+    
+}
+
+.container-titulo .palavra2{
+    position: absolute;
+    top: 52%;
+    right: 8%;
+    z-index: 2;
+}
+
+.arara-maior{
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    z-index: 4;
+    width: 320px;
+}
+
+.arara-menor{
+    position: absolute;
+    top: 46%;
+    right: 17.5%;
+    z-index: 4;
+    width: 174px;
+    
+}
+
+a{
+    font-family: "Bebas Regular", sans-serif;
+    text-decoration: none;
+}
+
+#menu{
+    width: 30px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#bar1{
+    
+    transform:  translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+
+
+}
+
+.nav li a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+
+}
+
+.nav {
+    
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+
+
+.menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg{
+
+    z-index: 6;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: rgba(0, 0, 0, 0.719);
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+#menu-bar{
+    z-index: 7;
+}
+
+.change-bg{
+    width: 100%;
+    height: 700px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar{
+    background-color: antiquewhite;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+    transform:  translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.changed{
+    display: block;
+}
+
+main{
+    
+}
+
+
