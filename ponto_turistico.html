@@ -165,11 +165,17 @@
 
 
     <script>
-        let sectionTeste = document.querySelector("section.mais__visitados");
+
+        let sectionTeste = document.querySelector("section.mais__visitados"); // pega a section mais__visitados
+        
+        // pega todas as div's com a classe item
         sectionTeste.querySelectorAll(".container .item").forEach(item => {
+            
+            // pega a label e o input da tag item
             let label = item.querySelector("label");
             let input = item.querySelector("input");
 
+            // quando colocar mouse por cima
             label.addEventListener("mouseover", () => {
                 input.checked = true;
             })

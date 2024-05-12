@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-@font-face {
-    font-family: "Abril fatface", serif;
-    src: url("../fonts/AbrilFatface-Regular.ttf");
-}
-
 
 * {
     margin: 0;
@@ -18,7 +13,6 @@
     color: #D3D3D3;
 }
 
-
 html {
     background-color: #0E0E0E;
 }
@@ -28,113 +22,115 @@ section {
     min-height: 95vh;
 }
 
+
+
+
+
+/*//// HEADER ////*/
 header{
-    height: 950px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.077), rgba(0,0,0,1)), url(../images/capa-lago.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    z-index: -5;
-    filter: brightness(83%);
+    width: 100%; height: 95vh;
     position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-    
 }
 
-.container-titulo{
+header .bg_img {
+    width: 100%; height: 100%;
     position: absolute;
-    top: 10%;
-    height: 500px;
-    width: 65vw;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent, #0E0E0E), url("../images/capa-lago.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+header .container-titulo {
+    width: 470px; height: 250px;
     
     display: flex;
     align-items: center;
     text-align: center;
  
+    position: relative;
+
+    background-color: rgba(255, 0, 0, 0.439);
+    border: 5px solid green;
 }
 
-.container-titulo .titulo-capa{
-    font-family: "Bebas regular", sans-serif;
-    font-size: 118px;
+header .container-titulo .titulo-capa {
+    /* font-family: "Bebas regular", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70pt;
     text-align: center;
     margin: auto;
     letter-spacing: 1px;
     
 }
 
-.container-titulo .palavra1{
+header .container-titulo .palavra1 {
+    font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
+    color: #FFFFFF;
+    
     position: absolute;
-    top: 9%;
+    top: 10px;
     left: -16%;
-
-    z-index: 1;
+    z-index: -1;
 }
 
-.container-titulo #e-comercial{
+header .container-titulo #e-comercial {
     font-family: "Abril fatface", serif;
     font-weight: 400;
     font-style: normal;
     color: #477ad0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    
-    
-    z-index: 2;
-    
 }
 
-.container-titulo .palavra2{
+header .container-titulo .palavra2 {
+    font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
+    color: #FFFFFF;
+
     position: absolute;
-    top: 45%;
+    top: 52%;
     right: -3%;
     z-index: 2;
 }
 
-.arara-maior{
+header .container-titulo .arara-maior {
+    width: 360px;
     position: absolute;
-    top: 6.7%;
-    left: 1%;
-    transform: rotate(10deg);
+    left: -300px;
+    top: -160px;
     z-index: 4;
-    width: 220px;
 }
 
-.arara-menor{
-    position: absolute;
-    top: 45%;
-    right: 10.5%;
-    z-index: 4;
+header .container-titulo .arara-menor {
     width: 174px;
-    
+    position: absolute;
+    right: -50px;
+    bottom: -70px;
+    z-index: 4;
 }
 
-a{
-    font-family: "Bebas Regular", sans-serif;
+
+
+a {  /* PRA Q SERVE ISSO? */
+    font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
     text-decoration: none;
 }
-/* menu */
 
-.efeito-vidro{
-    background-color: rgba(0, 0, 0, 0.567);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    height: 700px;
-    position: fixed;
-    z-index: 99;
-    transition: all 2s;
-    
-}
 
-.hamburguer{
+
+
+
+
+
+/*//// MENU ////*/
+.container .hamburguer {
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -149,8 +145,7 @@ a{
     z-index: 1001;
 }
 
-
-.line{
+.container .hamburguer .line {
     width: 100%;
     height: .1rem;
     padding: 2px;
@@ -160,24 +155,38 @@ a{
     transition: transform .9s;
 }
 
-.show-menu #line1{
+.container .efeito-vidro {
+    background-color: rgba(0, 0, 0, 0.567);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    z-index: 99;
+    transition: all 2s;
+    
+}
+
+
+
+/* NAO EXISTE NADA COM ESSES ID'S DENTROS DESSAS CLASSES */
+/* .show-menu #line1 {
     transform:  rotate(45deg) translate(.4rem, .9rem);
     background-color: #DAD7CD;
     box-shadow: none;
 }
 
-.show-menu #line2{
+.show-menu #line2 {
     opacity: 0;
     visibility: hidden;
 }
 
-.show-menu #line3{
+.show-menu #line3 {
     transform: rotate(-45deg)  translate(.2rem, -.8rem);
     background-color: #DAD7CD;
     box-shadow: none;
-}
+} */
 
-.sidebar{
+.sidebar {
     width: 100%;
     height: 700px;
     background-color: #020805ab;
@@ -187,17 +196,14 @@ a{
     right: -90rem;
     
     transition: all .8s;
-    
 }
 
-.show-menu .sidebar{
+.show-menu .sidebar {
     right: 0;
     z-index: 1000;
-    
-    
 }
 
-.menu{
+.menu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -218,18 +224,14 @@ a{
     margin-bottom: .5rem;
 }
 
-.menu-link{
+.menu-link {
     font-family:"Bebas Neue", sans-serif;
     font-size: 2rem;
     color: white;
     transition: color .7s;
 }
 
-.menu-link:hover{
+.menu-link:hover {
     color: black;
     transition: color .7s;
-}
-
-.mais__visitados{
-    z-index: -99;
 }
