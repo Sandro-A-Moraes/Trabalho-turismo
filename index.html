@@ -10,34 +10,38 @@
     <link rel="stylesheet" href="assets/css/imagens.css"> <!--Estilo da seção Imagens-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Arquivo JavaScript -->
     <script defer src="assets/js/script.js"></script>
     
     <title>Caminhos & Trilhas</title>
 </head>
 <body>
     
-    <section class="container">
+    <!-- Seção do menu lateral -->
+    <section class="container"> <!--Seção que contém menu e fundo borrado-->
+
         <div class="menu_hamburguer">
-            <span class="line" id="line1"></span>
-            <span class="line" id="line2"></span>
-            <span class="line" id="line3"></span>
+            <span class="line" id="line1"></span> <!--Linhas do menu-->
+            <span class="line" id="line2"></span> <!--Linhas do menu-->
+            <span class="line" id="line3"></span> <!--Linhas do menu-->
         </div>
 
-        <div class="fundo_vidro">
-            <aside class="sidebar">
+        <div class="fundo_vidro"> <!--Div de background que deixa o fundo borrado-->
+            <aside class="sidebar"> <!--Barra lateral que aparece ao clicar no menu-->
                 <nav class="navegacao">
                     <div class="menu">
+
                         <a href="#home" id="menu_link_1" class="menu_link">
                             <div class="menu_item" id="item1"><span class="nome_item">Home</span></div>
-                        </a>
+                        </a> <!--Item do menu-->
 
                         <a href="#mais__visitados" id="menu_link_2" class="menu_link">
                             <div class="menu_item" id="item2"><span class="nome_item">Mais Visitados</span></div>
-                        </a>
+                        </a> <!--Item do menu-->
 
                         <a href="https://wa.me/5594984389699" id="menu_link_3" class="menu_link" target="_blank">
                             <div class="menu_item" id="item3"><span class="nome_item">Fale Conosco</span></div>
-                        </a>
+                        </a> <!--Item do menu-->
 
                     </div>
                 </nav>
@@ -45,27 +49,29 @@
         </div>
     </section>
 
-   <header id="home">
-        <div class="bg_img"></div>
-        <div class="container_titulo">
+   <header id="home"> <!-- Cabeçalho da página, que contém capa, título e araras.-->
+        <div class="bg_img"></div> <!--Capa-->
+        <div class="container_titulo"> <!-- Container do título-->
+            <!-- Título -->
             <h1 class="titulo_capa"> 
                 <span class="palavra1">Caminhos</span>
                 <span id="e_comercial">&</span>
                 <span class="palavra2">Trilhas</span>
             </h1>
+            <!-- Imagens das araras -->
             <img class="arara_maior" src="assets/images/arara-maior.png" alt="Arara grande de frente ">
             <img class="arara_menor" src="assets/images/arara-menor.png" alt="arara menor de perfil">
         </div>
-
     </header>
 
+    <!-- Seção dos mais__visitados -->
     <section id="mais__visitados" class="mais__visitados">
-        <div class="titulo">
+        <div class="titulo"> <!--Div do título, com um texto à frente e outro atrás-->
             <h2>Mais visitados</h2>
             <p class="titulo__fundo">Mais visitados</p>
         </div>
-        <div class="container">
-            <div class="item">
+        <div class="container"> <!--Container dos itens-->
+            <div class="item"> <!--Item do container-->
                 <input type="radio" name="slide" id="card_1" checked>
                 <label for="card_1">
                     <a href="/Trabalho-turismo/ponto_turistico.html" target="ponto_turistico">
@@ -77,7 +83,7 @@
                 </label>
             </div>
 
-            <div class="item">
+            <div class="item"> <!--Item do container-->
                 <input type="radio" name="slide" id="card_2">
                 <label for="card_2">
                     <a href="/Trabalho-turismo/ponto_turistico.html" target="ponto_turistico">
@@ -89,7 +95,7 @@
                 </label>
             </div>
 
-            <div class="item">
+            <div class="item"> <!--Item do container-->
                 <input type="radio" name="slide" id="card_3">
                 <label for="card_3">
                     <a href="/Trabalho-turismo/ponto_turistico.html" target="ponto_turistico">
@@ -101,7 +107,7 @@
                 </label>
             </div>
 
-            <div class="item">
+            <div class="item"> <!--Item do container-->
                 <input type="radio" name="slide" id="card_4">
                 <label for="card_4">
                     <a href="/Trabalho-turismo/ponto_turistico.html" target="ponto_turistico">
@@ -115,14 +121,16 @@
         </div>
     </section>
 
-    <section class="imagens">
-        <div class="titulo">
+    <section class="imagens"> <!--Seção das imagens-->
+
+        <div class="titulo"> <!--Div do título, com um texto à frente e outro atrás-->
             <h2>Imagens</h2>
             <p class="titulo__fundo">Imagens</p>
         </div>
 
-        <div class="carrossel">
-            <div class="content_item">
+        <div class="carrossel"> <!--Efeito carrossel nas imagens-->
+
+            <div class="content_item"> <!-- item dos conteúdos-->
                 <div class="img"></div>
 
                 <div class="description">
@@ -138,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="content_item">
+            <div class="content_item"> <!-- item dos conteúdos-->
                 <div class="img"></div>
 
                 <div class="description">
@@ -155,7 +163,7 @@
             </div>
         </div>
 
-        <div class="img_dots">
+        <div class="img_dots"> <!--Simulador de controle das imagens-->
             <span class="material-symbols-outlined">arrow_circle_left</span>
             <input type="radio" name="" id="">
             <input type="radio" name="" id="">
@@ -165,14 +173,14 @@
         </div>
     </section>
 
-    <footer>
-        <div class="bg_content">
+    <footer> <!--Rodapé-->
+        <div class="bg_content"> <!--Background imagem-->
 
         </div>
         <div class="fundo__cinza">
             <h2 class="titulo">Caminhos <span>&</span> trilhas</h2>
 
-            <div class="menu navegar__pagina">
+            <div class="menu navegar__pagina"> <!--Menu para navegar página-->
                 <ul>
                     <li class="titulo__menu">Menu</li>
                     <li><a href="">Apresentação</a></li>
@@ -182,7 +190,7 @@
                 </ul>
             </div>
 
-            <div class="menu contatos">
+            <div class="menu contatos"> <!--Menu para contatos-->
                 <ul>
                     <li class="titulo__menu">Contatos</li>
                     <li>
@@ -196,7 +204,7 @@
                     <li>Entre em contato conosco</li>
                 </ul>
             </div>
-            <div class="menu redes_sociais">
+            <div class="menu redes_sociais"> <!--Menu de redes sociais-->
                 <p class="titulo__menu">Redes sociais</p>
                 <div class="linha__icones__redes_sociais">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
@@ -217,6 +225,7 @@
                 </div>
             </div>
         </div>
+        <!-- Imagem das pessoas que ficam no footer -->
         <img class="footer_img" src="assets/images/pessoas_footer.png" alt="pessoas que ficam no footer">
     </footer>
 

@@ -16,6 +16,11 @@
 html {
     background-color: #0E0E0E;
     scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
 }
 
 section {
@@ -146,11 +151,12 @@ section.container .menu_hamburguer .line {
     transition: transform .7s;
 }
 
-section.container .efeito_vidro {
+/* O JS aplica a classe .efeito_vidro quando o botão é pressionado e retira quando ele é pressionado novamente*/
+section.container .efeito_vidro { 
     background-color: rgba(0, 0, 0, 0.567);
     backdrop-filter: blur(11px);
     width: 100%;
-    height: 700px;
+    height: 100vh;
     position: fixed;
     z-index: 99;
     transition: all 2s;
@@ -160,6 +166,7 @@ section.container .efeito_vidro {
 
 
 /* ESSES AQUI SÃO AS ANIMAÇÕES DO MENU (NÃO MEXER) */
+/* Essas classes são ativadas e desativadas pelo JS */
 .show_menu #line1 {
     transform:  rotate(45deg) translate(.4rem, .9rem);
     background-color: #DAD7CD;
@@ -172,7 +179,7 @@ section.container .efeito_vidro {
 }
 
 .show_menu #line3 {
-    transform: rotate(-45deg)  translate(.2rem, -.8rem);
+    transform: rotate(-45deg)  translate(.29rem, -.8rem);
     background-color: #DAD7CD;
     box-shadow: none;
 }
@@ -181,7 +188,7 @@ section.container .efeito_vidro {
 
 section > div > aside.sidebar {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: #020805ab;
     box-shadow: 10px 5px 15px 10px rgba(0,0,0,0.582);
     position: fixed;
