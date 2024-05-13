@@ -116,10 +116,8 @@ header .container-titulo .arara-menor {
 
 
 
-a {  /* PRA Q SERVE ISSO? */
-    font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
-    text-decoration: none;
-}
+
+
 
 
 /*//// MENU ////*/
@@ -196,7 +194,7 @@ a {  /* PRA Q SERVE ISSO? */
     z-index: 1;
 }
 
-.menu {
+.container .menu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -204,11 +202,9 @@ a {  /* PRA Q SERVE ISSO? */
 
     display: flex;
     gap: 70px;
-    
-
 }
 
-.menu-item {
+.container .menu-item {
     width: 300px;
     height: 400px;
     list-style: none;
@@ -220,7 +216,7 @@ a {  /* PRA Q SERVE ISSO? */
     transition: all .6s;
 }
 
-.menu-item:hover{
+.container .menu-item:hover{
     filter: brightness(100%);
 }
 
