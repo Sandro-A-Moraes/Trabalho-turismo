@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilo principal -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Estilo dos mais visitados -->
     <link rel="stylesheet" href="assets/css/mais_visitados.css">
 
+    <!-- Importação do JavaScript -->
     <script defer src="assets/js/script.js"></script>
+
     <title>Caminhos & Trilhas</title>
 </head>
 <body>
     
+    
    <div class="container">
-        <div class="hamburguer">
+        <div class="menu-hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
@@ -22,16 +28,25 @@
             <aside class="sidebar">
                 <nav>
                     <div class="menu">
-                        <div class="menu-item"><a href="" class="menu-link">Home</a></div>
-                        <div class="menu-item"><a href="" class="menu-link">Sobre</a></div>
-                        <div class="menu-item"><a href="" class="menu-link">Dúvidas</a></div>
+                        <a href="#home" id="menu-link-1" class="menu-link">
+                            <div class="menu-item" id="item1"><span class="nome-item">Home</span></div>
+                        </a>
+
+                        <a href="#mais__visitados" id="menu-link-2" class="menu-link">
+                            <div class="menu-item" id="item2"><span class="nome-item">Mais Visitados</span></div>
+                        </a>
+
+                        <a href="https://wa.me/5594984389699" id="menu-link-3" class="menu-link" target="_blank">
+                            <div class="menu-item" id="item3"><span class="nome-item">Fale Conosco</span></div>
+                        </a>
+
                     </div>
                 </nav>
             </aside>
         </div>
    </div>
 
-    <header>
+    <header id="home">
         <div class="bg_img"></div>
         <div class="container-titulo">
             <h1 class="titulo-capa"> 
@@ -45,7 +60,7 @@
 
     </header>
 
-    <section class="mais__visitados">
+    <section id="mais__visitados" class="mais__visitados">
         <div class="container">
             <div class="item">
                 <input type="radio" name="slide" id="card_1" checked>
