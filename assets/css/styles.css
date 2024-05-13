@@ -22,9 +22,9 @@ section {
     width: 100%;
 }
 
-
-
-
+a{
+    text-decoration: none;
+}
 
 /*//// HEADER ////*/
 header{
@@ -49,7 +49,7 @@ header .bg_img {
     opacity: .9;
 }
 
-header .container-titulo {
+header .container_titulo {
     width: 470px; height: 250px;
     
     display: flex;
@@ -59,7 +59,7 @@ header .container-titulo {
     position: relative;
 }
 
-header .container-titulo .titulo-capa {
+header .container_titulo .titulo_capa {
     /* font-family: "Bebas regular", sans-serif; */
     font-weight: 400;
     font-style: normal;
@@ -70,7 +70,7 @@ header .container-titulo .titulo-capa {
     
 }
 
-header .container-titulo .palavra1 {
+header .container_titulo .palavra1 {
     font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
     color: #FFFFFF;
     
@@ -80,7 +80,7 @@ header .container-titulo .palavra1 {
     z-index: -1;
 }
 
-header .container-titulo #e-comercial {
+header .container_titulo #e_comercial {
     font-family: "Abril fatface", serif;
     font-weight: 400;
     font-style: normal;
@@ -88,7 +88,7 @@ header .container-titulo #e-comercial {
     z-index: 0;
 }
 
-header .container-titulo .palavra2 {
+header .container_titulo .palavra2 {
     font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
     color: #FFFFFF;
 
@@ -98,7 +98,7 @@ header .container-titulo .palavra2 {
     z-index: 1;
 }
 
-header .container-titulo .arara-maior {
+header .container_titulo .arara_maior {
     width: 60%;
     position: absolute;
     left: -50%;
@@ -106,7 +106,7 @@ header .container-titulo .arara-maior {
     z-index: 3;
 }
 
-header .container-titulo .arara-menor {
+header .container_titulo .arara_menor {
     width: 174px;
     position: absolute;
     right: -50px;
@@ -121,7 +121,7 @@ header .container-titulo .arara-menor {
 
 
 /*//// MENU ////*/
-.container .menu-hamburguer {
+section.container .menu_hamburguer {
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -136,7 +136,7 @@ header .container-titulo .arara-menor {
     z-index: 1001;
 }
 
-.container .menu-hamburguer .line {
+section.container .menu_hamburguer .line {
     width: 100%;
     height: .1rem;
     padding: 2px;
@@ -146,7 +146,7 @@ header .container-titulo .arara-menor {
     transition: transform .7s;
 }
 
-.container .efeito-vidro {
+section.container .efeito_vidro {
     background-color: rgba(0, 0, 0, 0.567);
     backdrop-filter: blur(11px);
     width: 100%;
@@ -160,41 +160,43 @@ header .container-titulo .arara-menor {
 
 
 /* ESSES AQUI SÃO AS ANIMAÇÕES DO MENU (NÃO MEXER) */
-.show-menu #line1 {
+.show_menu #line1 {
     transform:  rotate(45deg) translate(.4rem, .9rem);
     background-color: #DAD7CD;
     box-shadow: none;
 }
 
-.show-menu #line2 {
+.show_menu #line2 {
     opacity: 0;
     visibility: hidden;
 }
 
-.show-menu #line3 {
+.show_menu #line3 {
     transform: rotate(-45deg)  translate(.2rem, -.8rem);
     background-color: #DAD7CD;
     box-shadow: none;
 }
 
-.sidebar {
+/* Animações da sidebar (barra lateral) */
+
+section > div > aside.sidebar {
     width: 100%;
     height: 700px;
     background-color: #020805ab;
     box-shadow: 10px 5px 15px 10px rgba(0,0,0,0.582);
     position: fixed;
     top: 0;
-    right: -90rem;
+    right: -300%;
     
     transition: all .8s;
 }
 
-.show-menu .sidebar {
+.show_menu .sidebar {
     right: 0;
     z-index: 1;
 }
 
-.container .menu {
+section > div > aside > nav > .menu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -204,7 +206,7 @@ header .container-titulo .arara-menor {
     gap: 70px;
 }
 
-.container .menu-item {
+section > div > aside > nav > div > a > .menu_item {
     width: 300px;
     height: 400px;
     list-style: none;
@@ -216,22 +218,22 @@ header .container-titulo .arara-menor {
     transition: all .6s;
 }
 
-.container .menu-item:hover{
+section > div > aside > nav > div > a > .menu_item:hover{
     filter: brightness(100%);
 }
 
-.nome-item{
+section > div > aside > nav > div > a > div > .nome_item{
     color: #DAD7CD;
     transition: all .7s;
 }
 
-.nome-item:hover{
+section > div > aside > nav > div > a > div > .nome_item:hover{
     font-size: 1.2em;
     color: #3A5A40;
 
 }
 
-#item1{
+section > div > aside > nav > div > a > #item1{
     background-image: url(../images/img01.jpg);
     background-size: cover;
     background-position: 50%;
@@ -239,21 +241,21 @@ header .container-titulo .arara-menor {
 
 }
 
-#item2{
+section > div > aside > nav > div > a > #item2{
     background-image: url(../images/img06.jpg);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
-#item3{
+section > div > aside > nav > div > a > #item3{
     background-image: url(../images/brigadista-img.jpg);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
-.menu-link {
+section > div > aside > nav > div > .menu_link {
     font-family:"Bebas Neue", sans-serif;
     font-size: 2rem;
     /* color: #DAD7CD; */
