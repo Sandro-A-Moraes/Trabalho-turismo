@@ -94,3 +94,99 @@ section.imagens .img_dots span {
     color: rgba(67, 235, 67, 0.616);
     cursor: pointer;
 }
+
+section.imagens {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 200px 0;
+}
+
+/* configurando o titulo da section */
+section.imagens .titulo {
+    margin-bottom: -40px;
+    position: relative;
+    height: 100px;
+    padding-left: 50px;
+    margin-left: 60px;
+}
+
+section.imagens .titulo h2, 
+section.imagens .titulo p.titulo__fundo {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+section.imagens .titulo h2 {
+    font-size: 40pt;
+}
+
+section.imagens .titulo p.titulo__fundo {
+    opacity: 0.1;
+    font-size: 100pt;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+}
+
+section.imagens .carrossel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    padding: 40px 0;
+    margin-left: 50px;
+    padding-left: 120px;
+}
+
+section.imagens .carrossel .content_item {
+    width: 70vw; height: 70vh;
+    display: flex;
+    gap: 40px;
+}
+
+section.imagens .carrossel .content_item .img {
+    width: 40vw; height: 70vh;
+    background: url("../images/img01.jpg") center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(67, 235, 67, 0.23);
+}
+
+section.imagens .carrossel .content_item .description {
+    width: 30vw; height: 70vh;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section.imagens .carrossel .content_item .description p {
+    font-size: 9pt;
+}
+
+section.imagens .carrossel .content_item .description .button {
+    font-size: 10pt;
+    background-color: rgba(67, 235, 67, 0.616);
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: 0 0 20px rgba(67, 235, 67, 0.322);
+}
+
+section.imagens .carrossel .content_item .description .button:hover {
+    border-radius: 7pt;
+    opacity: .8;
+}
+
+section.imagens .img_dots {
+    display: flex;
+    gap: 10px;
+    margin-left: 170px;
+}
+
+section.imagens .img_dots span {
+    font-size: 15pt;
+    color: rgba(67, 235, 67, 0.616);
+    cursor: pointer;
+}
