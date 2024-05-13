@@ -19,7 +19,6 @@ html {
 
 section {
     width: 100%;
-    min-height: 95vh;
 }
 
 
@@ -57,9 +56,6 @@ header .container-titulo {
     text-align: center;
  
     position: relative;
-
-    background-color: rgba(255, 0, 0, 0.439);
-    border: 5px solid green;
 }
 
 header .container-titulo .titulo-capa {
@@ -235,3 +231,5 @@ a {  /* PRA Q SERVE ISSO? */
     color: black;
     transition: color .7s;
 }
+
+
