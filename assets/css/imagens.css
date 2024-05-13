@@ -40,6 +40,7 @@ section.imagens .carrossel {
     padding: 40px 0;
     margin-left: 50px;
     padding-left: 120px;
+    gap: 40px;
 }
 
 section.imagens .carrossel .content_item {
