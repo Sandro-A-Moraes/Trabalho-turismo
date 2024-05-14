@@ -58,17 +58,90 @@ section.imagens .carrossel .content_item .img {
     box-shadow: 0 0 40px rgba(67, 235, 67, 0.23);
 }
 
-section.imagens .carrossel .content_item .img.img01 {
-    background: url("../images/img01.jpg") center;
+
+/* imagens davi */
+section.imagens .carrossel .content_item.index .img.img01.davi {
+    background: url("../images/davi/Imagem1.jpg") center;
 }
 
-section.imagens .carrossel .content_item .img.img02 {
-    background: url("../images/img02.jpeg") center center;
+section.imagens .carrossel .content_item.index .img.img02.davi {
+    background: url("../images/davi/Imagem2.jpg") center;
 }
 
-section.imagens .carrossel .content_item .img.img03 {
-    background: url("../images/img05.jpg") center center;
+section.imagens .carrossel .content_item.ponto .img.img01.davi {
+    background: url("../images/davi/Imagem3.jpg") center;
 }
+
+section.imagens .carrossel .content_item.ponto .img.img02.davi {
+    background: url("../images/davi/Imagem4.jpg") center;
+}
+
+section.imagens .carrossel .content_item.ponto .img.img03.davi {
+    background: url("../images/davi/Imagem5.jpg") center;
+}
+
+section.imagens .carrossel .content_item.ponto .img.img04.davi {
+    background: url("../images/davi/Imagem6.jpg") center;
+}
+
+
+
+/* imagens fabi */
+section.imagens .carrossel .content_item .img.img01.fabi {
+    background: url("../images/fabi/maria4.jpg") center;
+}
+
+section.imagens .carrossel .content_item .img.img02.fabi {
+    background: url("../images/fabi/maria1.jpg") center;
+}
+
+section.imagens .carrossel .content_item .img.img03.fabi {
+    background: url("../images/fabi/maria3.jpg") center;
+}
+
+
+
+/* imagens monica */
+section.imagens .carrossel .content_item .img.img01.monica {
+    background: url("../images/monica/img_3.jpg") center;
+}
+
+section.imagens .carrossel .content_item .img.img02.monica {
+    background: url("../images/monica/img_4.jpg") center;
+}
+
+section.imagens .carrossel .content_item .img.img03.monica {
+    background: url("../images/monica/img_5.jpg") center;
+}
+
+
+
+/* imagens mariana */
+section.imagens .carrossel .content_item .img.img01.mariana {
+    background: url("../images/mariana/aguas_claras.png") center;
+}
+
+section.imagens .carrossel .content_item .img.img02.mariana {
+    background: url("../images/mariana/flor_de_carajas.jpg") center;
+}
+
+section.imagens .carrossel .content_item .img.img03.mariana {
+    background: url("../images/mariana/mirante_da_mina_de_ferro.png") center;
+}
+
+section.imagens .carrossel .content_item .img.img04.mariana {
+    background: url("../images/mariana/mirante_flor_de_carajas.png") center;
+}
+
+section.imagens .carrossel .content_item .img.img05.mariana {
+    background: url("../images/mariana/mirante_vale_do_rio_azul.png") center;
+}
+
+section.imagens .carrossel .content_item .img.img06.mariana {
+    background: url("../images/mariana/trilha_lagoa_da_mata.png") center;
+}
+
+
 
 section.imagens .carrossel .content_item .description {
     width: 30vw; height: 55vh;
