@@ -96,15 +96,21 @@ section.mais__visitados .container input:checked + label .text_and_img {
 }
 
 section.mais__visitados .container p {
+    width: 100px;
     opacity: 0;
-    transition: .3s;
     text-align: end;
     padding-top: 10px;
+    padding-right: 50px;
     font-family: "Poppins", sans-serif;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    transition: .6s;
 }
 
 section.mais__visitados .container input:checked + label p {
     opacity: 1;
+    width: 400px;
+    padding-right: 0;
 }
 
 section.mais__visitados .container label .text_and_img {
