@@ -27,9 +27,13 @@ section {
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
+
+
+
 
 /*//// HEADER ////*/
 header{
@@ -64,15 +68,14 @@ header .container_titulo {
     position: relative;
 }
 
+
 header .container_titulo .titulo_capa {
-    /* font-family: "Bebas regular", sans-serif; */
     font-weight: 400;
     font-style: normal;
     font-size: 5.8520rem;
     text-align: center;
     margin: auto;
     letter-spacing: 1px;
-    
 }
 
 header .container_titulo .palavra1 {
@@ -96,7 +99,7 @@ header .container_titulo #e_comercial {
 header .container_titulo .palavra2 {
     font-family: "Bebas Neue", sans-serif; /* NAO MEXER NA FONTE */
     color: #FFFFFF;
-
+    
     position: absolute;
     top: 52%;
     right: -3%;
@@ -117,6 +120,39 @@ header .container_titulo .arara_menor {
     right: -50px;
     bottom: -70px;
     z-index: 3;
+}
+
+@media (max-width: 750px) {
+    header .container_titulo {
+        width: 240px; height: 250px;
+    }
+    header .container_titulo .titulo_capa {
+        font-size: 50pt;
+        line-height: 40px;
+    }
+    
+    header .container_titulo .palavra1 {
+        position: static;
+        line-height: 30px;
+    }
+    header .container_titulo #e_comercial {
+        line-height: 30px;
+    }
+    header .container_titulo .palavra2 {
+        line-height: 30px;
+        position: static;
+    }
+    header .container_titulo .arara_maior {
+        width: 70%;
+        left: -20%;
+        top: -15%;
+    }
+    
+    header .container_titulo .arara_menor {
+        width: 120px; 
+        right: -20px;
+        bottom: -30px;
+    }
 }
 
 
@@ -270,3 +306,12 @@ section > div > aside > nav > div > .menu_link {
 }
 
 /* FIM DAS ANIMAÇÕES DO MENU */
+@media (max-width: 750px) {
+    section.section
+    section.container .menu_hamburguer,
+    section.container .menu_hamburguer .line,
+    section.container .efeito_vidro 
+    {
+        display: none;
+    }
+}

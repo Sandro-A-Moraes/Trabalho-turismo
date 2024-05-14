@@ -166,8 +166,22 @@ section.imagens .imagem__canto {
     transition: .3s;
 }
 
-section.imagens .imagem__canto:hover {
-    filter: blur(0px);
-    transform: scale(.9);
-    rotate: -4deg;
+@media (max-width: 750px) {
+    section.apresentacao h1 {
+        font-size: 30pt;
+    }
+    section.apresentacao__descricao {
+        padding: 40px;
+        margin: 0;
+    }
+    
+    section.apresentacao__descricao p {
+        z-index: 1;
+        width: 100%;
+        font-size: 10pt;
+    }
+    section.apresentacao__descricao .background,
+    section.apresentacao__descricao .background .gradient {
+        display: none;
+    }
 }

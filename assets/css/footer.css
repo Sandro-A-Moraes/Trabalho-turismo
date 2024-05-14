@@ -2,6 +2,8 @@
     --bgColor: #055f56;
     --shadowColor: #055f567c;
 }
+
+
 footer {
     position: relative;
     margin: 30px;
@@ -32,7 +34,7 @@ footer .fundo__cinza {
 footer .fundo__cinza .titulo {
     font-family: "Bebas Neue", sans-serif;
     font-size: 22pt;
-
+    
     grid-column-start: 1;
     grid-row-start: 1;
 }
@@ -75,6 +77,7 @@ footer .fundo__cinza .menu.contatos {
     grid-row-end: 3;
 }
 
+
 footer .fundo__cinza .menu.contatos li {
     display: flex;
     gap: 10px;
@@ -104,4 +107,38 @@ footer .footer_img {
     bottom: -30px;
     right: 0;
     width: 320px;
+}
+
+@media (max-width: 750px) {
+    footer {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    footer .bg_content {
+        border-radius: 0;
+    }
+    footer .fundo__cinza {
+        grid-template-columns: 120px 120px 100px;
+        grid-template-rows: 70px 120px 110px 100px;
+    }
+    footer .fundo__cinza .titulo {
+        font-size: 20pt;
+        grid-column-end: 3;
+    }
+    footer .fundo__cinza .menu.contatos {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    footer .fundo__cinza .menu.redes_sociais {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    footer .footer_img {
+        display: none;
+    }
 }

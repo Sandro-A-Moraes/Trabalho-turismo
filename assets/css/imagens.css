@@ -78,7 +78,6 @@ section.imagens .carrossel .content_item .description {
     gap: 40px;
 }
 
-
 section.imagens .carrossel .content_item .description p {
     font-size: 9pt;
 }
@@ -116,4 +115,48 @@ section.imagens .img_dots span:hover {
 
 section.imagens .img_dots span.deactivated {
     color: rgba(67, 235, 67, 0.145);
+}
+
+@media (max-width: 750px) {
+    section.imagens {
+        margin: 0;
+    }
+    section.imagens .titulo {
+        padding-left: 30px;
+        margin-left: 0;
+    }
+    section.imagens .titulo h2 {
+        font-size: 30pt;
+    }
+    section.imagens .titulo p.titulo__fundo {
+        font-size: 50pt;
+    }
+
+    section.imagens .carrossel {
+        overflow-x: hidden;
+        padding: 40px 15vw;
+        gap: 1vw;
+    }
+
+    section.imagens .carrossel .content_item {
+        width: 100%; height: auto;
+        transition: 1s ease;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section.imagens .carrossel .content_item .img {
+        width: 70vw; height: 30vh;
+    }
+
+    section.imagens .carrossel .content_item .description {
+        width: 100%; height: auto;
+        padding: 0;
+        gap: 15px;
+    }
+
+    section.imagens .img_dots {
+        margin: 0;
+        justify-content: center;
+    }
 }

@@ -16,7 +16,9 @@ section.mais__visitados .titulo {
     height: 100px;
     padding-left: 50px;
     margin-left: 60px;
+    text-wrap: nowrap;
 }
+
 
 section.mais__visitados .titulo h2, 
 section.mais__visitados .titulo p.titulo__fundo {
@@ -26,6 +28,7 @@ section.mais__visitados .titulo p.titulo__fundo {
 section.mais__visitados .titulo h2 {
     font-size: 40pt;
 }
+
 
 section.mais__visitados .titulo p.titulo__fundo {
     opacity: 0.1;
@@ -49,6 +52,7 @@ section.mais__visitados .container {
     width: 100%;
     justify-content: center;
 }
+
 
 section.mais__visitados .container input {
     display: none;
@@ -132,4 +136,42 @@ section.mais__visitados .container label[for="card_3"] .text_and_img {
 
 section.mais__visitados .container label[for="card_4"] .text_and_img {
     background: url("../images/mais_visitados/04.jpg") center;
+}
+
+@media (max-width: 750px) {
+    section.mais__visitados .titulo {
+        padding-left: 30px;
+        margin-left: 0;
+    }
+    section.mais__visitados .titulo h2 {
+        font-size: 30pt;
+    }
+    section.mais__visitados .titulo p.titulo__fundo {
+        font-size: 50pt;
+    }
+    section.mais__visitados .container {
+        flex-direction: column;
+    }
+    section.mais__visitados .container label .text_and_img {
+        border-radius: 10px;
+        width: 85%; height: 220px;
+        margin: 0 auto;
+    }
+    section.mais__visitados .container input:checked + label .text_and_img {
+        border-radius: 10px;
+        width: 85%; height: 220px;
+        margin: 0 auto;
+    }
+    section.mais__visitados .container p {
+        width: 85%;
+        opacity: 1;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    section.mais__visitados .container input:checked + label p {
+        width: 85%;
+        opacity: 1;
+        padding-right: 0;
+        margin: 0 auto;
+    }
 }

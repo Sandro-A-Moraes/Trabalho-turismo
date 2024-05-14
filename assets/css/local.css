@@ -33,3 +33,23 @@ section.apresentacao__local iframe {
     border-radius: 10px;
     margin: auto;
 }
+
+@media (max-width: 750px) {
+    section.apresentacao__local {
+        margin: 0;
+    }
+    section.apresentacao__local .titulo {
+        padding-left: 30px;
+        margin-left: 0;
+    }
+    section.apresentacao__local .titulo h2 {
+        font-size: 30pt;
+    }
+    section.apresentacao__local .titulo p.titulo__fundo {
+        font-size: 50pt;
+    }
+    section.apresentacao__local iframe {
+        width: 90%; height: 50vh;
+        border-radius: 10px;
+    }
+}
